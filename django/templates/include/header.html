@@ -1,0 +1,33 @@
+{% load static %}
+
+<!-- Header Area -->
+<header id="header" class="header">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-12">
+                    <a href="/"><img src="{% static 'img/logo.png' %}" class="logo" alt="logo.png"></a>
+                </div>
+                <div class="col-md-9 col-sm-10 col-xs-12">
+                    <div class="mobile-menu"></div>
+                    <nav class="navbar navbar-default">
+                        <div class="collapse navbar-collapse">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li class="current"><a href="#about">Главное</a></li>
+                                <li><a href="#service">Преимущества</a></li>
+                                <li><a href="#story">о нас </a></li>
+                                <li><a href="{% url 'menu_home' %}">Наши продукции</a></li>
+                                <li><a href="#blog">Новости & Акции</a></li>
+                                <li><a href="#contact">Контакты</a></li>
+                                <li><a href="https://sovosova.onlineoffice.pro/ru-RU/login">Вход</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://sovosova.onlineoffice.pro/?ref=MPPRzTw8n">Регистрация </a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->

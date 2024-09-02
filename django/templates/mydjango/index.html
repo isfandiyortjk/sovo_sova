@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load posts_url_tags %}
+{% get_posts as posts %}
+
+{% block content %}
+
+{% include "include/about.html" %}
+
+{% include "include/service.html" %}
+
+{% include "include/story.html" %}
+
+{% include "include/blog.html" %}
+
+{% include "include/contact.html" %}
+
+{% include "include/social.html" %}
+
+{% include "include/testimonials.html" %}
+
+{% include "include/newslatter.html" %}
+
+
+{% endblock content %}

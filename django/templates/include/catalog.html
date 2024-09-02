@@ -1,0 +1,36 @@
+{% load static %}
+<section id="catalog" class="catalog section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-4 col-xs-12">
+                <div class="section-title">
+                    <h2>Наш <span>Каталог</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for el in products %}
+            <div class="col-md-4 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                <div class="single-product">
+                    <div class="product-head">
+                        {% if product.image %}
+                        <img src="{{ product.image.url }}" alt="{{ product.title }}">
+                        {% endif %}
+                        <div class="product-view">
+                            <span><i class="fa fa-shopping-cart"></i>Добавить в корзину</span>
+                            <span><i class="fa fa-eye"></i>Просмотреть</span>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <h2><a href="#">{{ product.title }}</a></h2>
+                        <p>{{ product.description }}</p>
+                        <div class="product-price">
+                            <span>{{ product.price }} руб.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

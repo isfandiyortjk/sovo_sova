@@ -1,0 +1,20 @@
+<section id="newslatter" class="newslatter section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="news-text wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <h4>Остались вопросы ?</h4>
+                    <h2>Можете оставить контакты</h2>
+                    <p>Мы с вами свяжемся </p>
+                </div>
+                <div class="form wow shake" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <form method="post" action="{% url 'mydjango:newsletter_signup' %}">
+                        {% csrf_token %}
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
